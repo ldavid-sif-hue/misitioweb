@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Proyecto Integrador Web</title>
+
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+
+    <!-- ENCABEZADO -->
+    <header>
+
+        <div class="contenedor-header">
+
+            <h1>Proyecto Integrador Web</h1>
+
+            <nav>
+                <ul>
+                    <li>
+                        <a href="#inicio">Inicio</a>
+                    </li>
+
+                    <li>
+                        <a href="#proyecto">Proyecto</a>
+                    </li>
+
+                    <li>
+                        <a href="#contacto">Contacto</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <button id="modoBtn">🌙</button>
+
+        </div>
+
+    </header>
+
+
+    <!-- CONTENIDO PRINCIPAL -->
+    <main id="inicio">
+
+        <section class="hero">
+
+            <div class="hero-texto">
+
+                <p class="etiqueta">PROYECTO ACADÉMICO</p>
+
+                <h2>
+                    Mi sitio web
+                    <span>estructurado</span>
+                </h2>
+
+                <p>
+                    Este sitio web ha sido desarrollado como parte
+                    del Proyecto Integrador Web, utilizando HTML,
+                    CSS y JavaScript.
+                </p>
+
+                <button id="infoBtn" class="boton">
+                    Ver información
+                </button>
+
+            </div>
+
+            <div class="hero-imagen">
+                <img src="img/proyecto.png"
+                     alt="Captura del proyecto">
+            </div>
+
+        </section>
+
+
+        <!-- PROYECTO -->
+        <section id="proyecto" class="seccion">
+
+            <h2>Publicación y despliegue</h2>
+
+            <p>
+                Este sitio está optimizado para su transferencia
+                mediante FTP o GitHub Pages.
+            </p>
+
+            <div class="tarjetas">
+
+                <div class="tarjeta">
+                    <div class="icono">🌐</div>
+
+                    <h3>HTML</h3>
+
+                    <p>
+                        Permite crear y estructurar
+                        el contenido de la página.
+                    </p>
+                </div>
+
+
+                <div class="tarjeta">
+                    <div class="icono">🎨</div>
+
+                    <h3>CSS</h3>
+
+                    <p>
+                        Se utiliza para diseñar y mejorar
+                        la apariencia del sitio.
+                    </p>
+                </div>
+
+
+                <div class="tarjeta">
+                    <div class="icono">⚡</div>
+
+                    <h3>JavaScript</h3>
+
+                    <p>
+                        Añade interactividad y funciones
+                        dinámicas a la página.
+                    </p>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- CONTACTO -->
+        <section id="contacto" class="contacto">
+
+            <h2>Proyecto Integrador</h2>
+
+            <p>
+                Página desarrollada para demostrar
+                conocimientos de desarrollo web.
+            </p>
+
+            <button id="saludoBtn" class="boton">
+                ¡Haz clic!
+            </button>
+
+            <p id="mensaje"></p>
+
+        </section>
+
+    </main>
+
+
+    <!-- PIE DE PÁGINA -->
+    <footer>
+
+        <p>
+            © <span id="anio"></span> Proyecto Integrador Web
+        </p>
+
+        <p>
+            Desarrollado con HTML, CSS y JavaScript
+        </p>
+
+    </footer>
+
+
+    <script src="js/app.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,385 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f7fb;
+    color: #202530;
+    transition: 0.3s;
+}
+
+
+header {
+    background: #172554;
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.contenedor-header {
+    max-width: 1100px;
+    margin: auto;
+
+    padding: 18px 25px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header h1 {
+    font-size: 22px;
+}
+
+
+nav ul {
+    list-style: none;
+
+    display: flex;
+    gap: 25px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #60a5fa;
+}
+
+
+
+#modoBtn {
+    border: none;
+    background: #2563eb;
+
+    color: white;
+
+    width: 40px;
+    height: 40px;
+
+    border-radius: 50%;
+
+    cursor: pointer;
+
+    font-size: 18px;
+
+    transition: 0.3s;
+}
+
+#modoBtn:hover {
+    transform: scale(1.1);
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+    max-width: 1100px;
+
+    margin: auto;
+
+    min-height: 500px;
+
+    padding: 80px 25px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 50px;
+}
+
+
+.hero-texto {
+    max-width: 550px;
+}
+
+.etiqueta {
+    color: #2563eb;
+
+    font-weight: bold;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 15px;
+}
+
+
+.hero h2 {
+    font-size: 50px;
+
+    line-height: 1.1;
+
+    margin-bottom: 25px;
+}
+
+
+.hero h2 span {
+    color: #2563eb;
+}
+
+
+.hero-texto p {
+    font-size: 18px;
+
+    line-height: 1.7;
+
+    color: #64748b;
+
+    margin-bottom: 25px;
+}
+
+
+
+
+.hero-imagen {
+    width: 450px;
+}
+
+.hero-imagen img {
+    width: 100%;
+
+    border-radius: 20px;
+
+    box-shadow:
+        0 20px 40px rgba(0, 0, 0, 0.15);
+
+    transition: 0.3s;
+}
+
+.hero-imagen img:hover {
+    transform: translateY(-8px);
+}
+
+
+
+.boton {
+    border: none;
+
+    background: #2563eb;
+
+    color: white;
+
+    padding: 14px 25px;
+
+    border-radius: 10px;
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.boton:hover {
+    background: #1d4ed8;
+
+    transform: translateY(-3px);
+
+    box-shadow: 0 8px 20px rgba(37, 99, 235, 0.3);
+}
+
+
+
+
+.seccion {
+    background: white;
+
+    padding: 80px 25px;
+
+    text-align: center;
+}
+
+.seccion > h2 {
+    font-size: 35px;
+
+    margin-bottom: 15px;
+}
+
+.seccion > p {
+    color: #64748b;
+
+    margin-bottom: 45px;
+}
+
+
+
+
+.tarjetas {
+    max-width: 1100px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 25px;
+}
+
+.tarjeta {
+    background: #f8fafc;
+
+    padding: 35px 25px;
+
+    border-radius: 15px;
+
+    border: 1px solid #e2e8f0;
+
+    transition: 0.3s;
+}
+
+.tarjeta:hover {
+    transform: translateY(-8px);
+
+    box-shadow:
+        0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+.icono {
+    font-size: 40px;
+
+    margin-bottom: 15px;
+}
+
+.tarjeta h3 {
+    margin-bottom: 10px;
+
+    font-size: 22px;
+}
+
+.tarjeta p {
+    color: #64748b;
+
+    line-height: 1.6;
+}
+
+
+
+
+.contacto {
+    padding: 80px 25px;
+
+    text-align: center;
+
+    background: #172554;
+
+    color: white;
+}
+
+.contacto h2 {
+    font-size: 35px;
+
+    margin-bottom: 15px;
+}
+
+.contacto p {
+    margin-bottom: 25px;
+
+    color: #cbd5e1;
+}
+
+#mensaje {
+    margin-top: 20px;
+
+    font-weight: bold;
+
+    color: #60a5fa;
+}
+
+
+
+
+footer {
+    background: #0f172a;
+
+    color: #94a3b8;
+
+    text-align: center;
+
+    padding: 25px;
+
+    line-height: 1.8;
+}
+
+
+
+
+body.oscuro {
+    background: #0f172a;
+
+    color: white;
+}
+
+body.oscuro .seccion {
+    background: #1e293b;
+}
+
+body.oscuro .tarjeta {
+    background: #0f172a;
+
+    border-color: #334155;
+}
+
+body.oscuro .hero-texto p,
+body.oscuro .seccion > p,
+body.oscuro .tarjeta p {
+    color: #cbd5e1;
+}
+
+
+
+
+@media (max-width: 800px) {
+
+    .contenedor-header {
+        flex-wrap: wrap;
+
+        gap: 15px;
+    }
+
+    nav ul {
+        gap: 12px;
+    }
+
+    .hero {
+        flex-direction: column;
+
+        text-align: center;
+    }
+
+    .hero h2 {
+        font-size: 38px;
+    }
+
+    .hero-imagen {
+        width: 100%;
+
+        max-width: 450px;
+    }
+
+    .tarjetas {
+        grid-template-columns: 1fr;
+    }
+}
